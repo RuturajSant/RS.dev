@@ -2,6 +2,13 @@ const navbar = document.getElementById("navbar-fixed-top");
 const checkbox = document.getElementById("toggle");
 const links = document.querySelectorAll(".navbar-nav li a");
 const homeLink = document.querySelector(".navbar-brand");
+const loader = document.querySelector(".loader");
+
+window.addEventListener("load", () => {
+    loader.classList.add("remove-loader");
+});
+
+
 
 homeLink.addEventListener("click", function () {
     if (window.innerWidth < 1024) {
