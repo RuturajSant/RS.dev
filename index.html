@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RS.DEV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/svgStyles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header id="navbar-fixed-top">
+      <!-- responsive nav bar-->
+      <nav class="navbar" role="navigation">
+        <div class="container-nav">
+          <div class="navbar-header flex">
+            <a class="navbar-brand" href="#">RS.dev</a>
+            <input type="checkbox" id="toggle" class="visually-hidden" />
+            <label class="navbar-toggle" for="toggle">
+              <svg
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="hamburger-menu">
+                  <g id="close">
+                    <line
+                      id="right"
+                      x1="2.5"
+                      y1="-2.5"
+                      x2="94.1704"
+                      y2="-2.5"
+                      transform="matrix(-0.724109 0.689685 -0.724109 -0.689685 95 25)"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      id="left"
+                      x1="2.5"
+                      y1="-2.5"
+                      x2="94.1704"
+                      y2="-2.5"
+                      transform="matrix(0.724109 0.689685 -0.724109 0.689685 25 28.3279)"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                  <g id="burger" class="open">
+                    <g id="low">
+                      <line
+                        id="low-big"
+                        x1="91.5"
+                        y1="84.5"
+                        x2="51.5"
+                        y2="84.5"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                      <line
+                        id="low-small"
+                        x1="42.5"
+                        y1="84.5"
+                        x2="27.5"
+                        y2="84.5"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                    <g id="mid">
+                      <line
+                        id="mid_2"
+                        x1="92.5"
+                        y1="62.5"
+                        x2="27.5"
+                        y2="62.5"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                    <g id="top">
+                      <line
+                        id="top-big"
+                        x1="67.5"
+                        y1="39.5"
+                        x2="27.5"
+                        y2="39.5"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                      <line
+                        id="top-small"
+                        x1="91.5"
+                        y1="39.5"
+                        x2="76.5"
+                        y2="39.5"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </label>
+            <ul class="flex navbar-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+
+              <a class="resume col-resume button" href="./Resume.pdf">Resume</a>
+            </ul>
+            <a class="resume row-resume button" href="./Resume.pdf">Resume</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="background">
+      <div id="background-left">
+        <svg
+          id="left-hex"
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g class="hexagons">
+            <path
+              class="hex-inner"
+              stroke-opacity="0.6"
+              d="M103.75 57.7424L134.721 75.6236C137.042 76.9634 138.471 79.4393 138.471 82.1188V117.881C138.471 120.561 137.042 123.037 134.721 124.376L103.75 142.258C101.429 143.597 98.5705 143.597 96.25 142.258L65.2789 124.376C62.9583 123.037 61.5289 120.561 61.5289 117.881V82.1188C61.5289 79.4393 62.9584 76.9634 65.2789 75.6236L96.25 57.7424C98.5705 56.4027 101.429 56.4027 103.75 57.7424Z"
+            />
+            <path
+              class="hex-mid"
+              stroke-opacity="0.4"
+              d="M103.25 34.7424L153.707 63.8736C156.027 65.2134 157.457 67.6893 157.457 70.3688V128.631C157.457 131.311 156.027 133.787 153.707 135.126L103.25 164.258C100.929 165.597 98.0705 165.597 95.75 164.258L45.2933 135.126C42.9728 133.787 41.5433 131.311 41.5433 128.631V70.3688C41.5433 67.6893 42.9728 65.2134 45.2933 63.8736L95.75 34.7424C98.0705 33.4027 100.929 33.4027 103.25 34.7424Z"
+            />
+            <path
+              class="hex-outer"
+              stroke-opacity="0.2"
+              d="M101.75 10.7424L171.692 51.1236C174.013 52.4634 175.442 54.9393 175.442 57.6188V138.381C175.442 141.061 174.013 143.537 171.692 144.876L101.75 185.258C99.4295 186.597 96.5705 186.597 94.25 185.258L24.3077 144.876C21.9872 143.537 20.5577 141.061 20.5577 138.381V57.6188C20.5577 54.9393 21.9872 52.4634 24.3077 51.1236L94.25 10.7424C96.5705 9.40267 99.4295 9.40267 101.75 10.7424Z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div id="background-right">
+        <svg
+          id="right-hex"
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g class="hexagons">
+            <path
+              class="hex-inner"
+              stroke-opacity="0.6"
+              d="M103.75 57.7424L134.721 75.6236C137.042 76.9634 138.471 79.4393 138.471 82.1188V117.881C138.471 120.561 137.042 123.037 134.721 124.376L103.75 142.258C101.429 143.597 98.5705 143.597 96.25 142.258L65.2789 124.376C62.9583 123.037 61.5289 120.561 61.5289 117.881V82.1188C61.5289 79.4393 62.9584 76.9634 65.2789 75.6236L96.25 57.7424C98.5705 56.4027 101.429 56.4027 103.75 57.7424Z"
+            />
+            <path
+              class="hex-mid"
+              stroke-opacity="0.4"
+              d="M103.25 34.7424L153.707 63.8736C156.027 65.2134 157.457 67.6893 157.457 70.3688V128.631C157.457 131.311 156.027 133.787 153.707 135.126L103.25 164.258C100.929 165.597 98.0705 165.597 95.75 164.258L45.2933 135.126C42.9728 133.787 41.5433 131.311 41.5433 128.631V70.3688C41.5433 67.6893 42.9728 65.2134 45.2933 63.8736L95.75 34.7424C98.0705 33.4027 100.929 33.4027 103.25 34.7424Z"
+            />
+            <path
+              class="hex-outer"
+              stroke-opacity="0.2"
+              d="M101.75 10.7424L171.692 51.1236C174.013 52.4634 175.442 54.9393 175.442 57.6188V138.381C175.442 141.061 174.013 143.537 171.692 144.876L101.75 185.258C99.4295 186.597 96.5705 186.597 94.25 185.258L24.3077 144.876C21.9872 143.537 20.5577 141.061 20.5577 138.381V57.6188C20.5577 54.9393 21.9872 52.4634 24.3077 51.1236L94.25 10.7424C96.5705 9.40267 99.4295 9.40267 101.75 10.7424Z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div id="email-ds" class="curve-bg">
+      <a href="mailto:sant.ruturaj2001@gmail.com">sant.ruturaj2001@gmail.com</a>
+    </div>
+    <div id="social-links" class="curve-bg">
+      <ul class="flex">
+        <li>
+          <a href="http://github.com/RuturajSant/"
+            ><img src="./icons/github.svg" alt="Github"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ruturaj_sant/"
+            ><img src="./icons/instagram.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/ruturaj-sant"
+            ><img src="./icons/codepen.svg" alt="Codepen"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ruturaj-sant-834825194/"
+            ><img src="./icons/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <div id="hero">
+      <div class="container grid">
+        <p id="intro">Hi I'm</p>
+        <h1 id="name">Ruturaj Sant</h1>
+        <h3 class="title">Web Developer</h3>
+        <p id="desc">
+          I'm a full stack developer specializing in building (and occasionally
+          designing) unique digital experience.
+        </p>
+        <a id="hero-button" class="button" href="#work">Check out my work!</a>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <h3 class="title border">About Me</h3>
+        <div class="content-container flex">
+          <div class="img-container">
+            <img src="./images/DSC05302.jpg" alt="Pic of Me!!" />
+          </div>
+          <p class="content">
+            Hello everyone!! Im a web developer based in Nagpur,Maharastra.<br /><br />
+            I learned web dev during the pandemic and was instantly in love with
+            building cool and unique websites.<br /><br />
+            Designing projects has always been a hobby. Collaborating on a
+            project is a real treat, so if you have a project in mind, I'd love
+            to hear from you.<br /><br />
+            Currently Im a student and doing web dev part time, but I hope to
+            pursue my career in this field as a full stack MERN developer.<br /><br />
+            When not working alongside clients, I enjoy spending time on
+            personal projects, watching movies and anime.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="skills">
+      <div class="container flex">
+        <div class="skills-content">
+          <h4 class="skill-title">Advanced</h4>
+          <p class="skill-para">
+            HTML, Css, Javascript, GIT, React, Node.js, Python, SQL, Graphic
+            Design
+          </p>
+        </div>
+        <div class="skills-content">
+          <h4 class="skill-title">Intermediate</h4>
+          <p class="skill-para">
+            Express, PHP, Django, C, Java, Data Structures
+          </p>
+        </div>
+        <div class="skills-content">
+          <h4 class="skill-title">Basic</h4>
+          <p class="skill-para">AWS, MongoDb, Machine Learning</p>
+        </div>
+      </div>
+    </div>
+    <div id="work">
+      <div class="container">
+        <h3 class="title border-center">Some of my Work</h3>
+        <ul class="work-container">
+          <li class="card card-right">
+            <div class="img-con">
+              <img src="./images/work-1.png" alt="pic" />
+            </div>
+            <div class="card-content">
+              <h2>Chat Web app</h2>
+              <p>
+                A realtime chat application built with React and Firebase. The
+                app uses RSuite for the UI and Firebase for database and
+                authentication. The app is fully responsive and works on mobile
+                and desktop. The app is live and can be viewed on share link
+                below the github link.
+              </p>
+              <p>React, Node.js, Firebase, RSuite</p>
+            </div>
+            <ul class="icons">
+              <li>
+                <a href="https://github.com/RuturajSant/chat-app"
+                  ><img src="./icons/github.svg" alt="Github"
+                /></a>
+              </li>
+              <li>
+                <a href="https://r-chat-19793.firebaseapp.com/"
+                  ><img src="./icons/share.svg" alt="Demo"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li class="card">
+            <div class="img-con">
+              <img src="./images/work-2.png" alt="pic" />
+            </div>
+            <div class="card-content">
+              <h2>Box Office App</h2>
+              <p>
+                A React app that fetches data from the movie database and
+                displays it in a grid. The database is taken from a API and the
+                app is fully responsive. There are features like selecting by
+                movie or ctor name and adding favourites. The app is live and
+                can be viewed on share link below the github link.
+              </p>
+              <p>React, Node.js</p>
+            </div>
+            <ul class="icons">
+              <li>
+                <a href="https://github.com/RuturajSant/box-office"
+                  ><img src="./icons/github.svg" alt="Github"
+                /></a>
+              </li>
+              <li>
+                <a href="https://ruturajsant.github.io/box-office/"
+                  ><img src="./icons/share.svg" alt="Demo"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li class="card card-right">
+            <div class="img-con">
+              <img src="./images/work-3.png" alt="pic" />
+            </div>
+            <div class="card-content">
+              <h2>E-Commerce Website</h2>
+              <p>
+                A PHP full stack (HTML,CSS,PHP,SQL) application that fetches
+                data through a MySQL database. The website has Login and
+                authentication features. Items can be added to cart and can be
+                purchased.
+              </p>
+              <p>HTML, CSS, Bootstrap JS, PHP, SQL</p>
+            </div>
+            <ul class="icons">
+              <li>
+                <a href="https://github.com/RuturajSant/e-commerce_website"
+                  ><img src="./icons/github.svg" alt="Github"
+                /></a>
+              </li>
+              <!-- <li>
+                <a href=""><img src="./icons/share.svg" alt="Demo" /></a>
+              </li> -->
+            </ul>
+          </li>
+          <li class="card">
+            <div class="img-con">
+              <img src="./images/work-4.png" alt="pic" />
+            </div>
+            <div class="card-content">
+              <h2>IT Landing page</h2>
+              <p>
+                A mock landing page for a IT company. I used tailwind for its
+                awesome UI components and customized it using CSS. The page is
+                fully responsive and works on mobile and desktop. The page is
+                live and can be viewed on share link below the github link.
+              </p>
+              <p>HTML, CSS, JS, Tailwind</p>
+            </div>
+            <ul class="icons">
+              <li>
+                <a href="https://github.com/RuturajSant/IT_landing_page"
+                  ><img src="./icons/github.svg" alt="Github"
+                /></a>
+              </li>
+              <li>
+                <a href="https://it-landing-page.vercel.app/"
+                  ><img src="./icons/share.svg" alt="Demo"
+                /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <h3 class="title border-center">Get in Touch</h3>
+        <div class="contact-content">
+          <p>
+            Currently I'm looking for opportunities. I'd love to hear from you!
+          </p>
+          <p>Feel free to reach out to me.</p>
+          <a class="button" href="mailto:sant.ruturaj2001@gmail.com"
+            >Say Hello!</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        Designed and built by <span>Ruturaj Sant.</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

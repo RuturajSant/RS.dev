@@ -1,0 +1,22 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hamburger-menu">
+
+<g id="close">
+<line id="right" x1="2.5" y1="-2.5" x2="94.1704" y2="-2.5" transform="matrix(-0.724109 0.689685 -0.724109 -0.689685 95 25)" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<line id="left" x1="2.5" y1="-2.5" x2="94.1704" y2="-2.5" transform="matrix(0.724109 0.689685 -0.724109 0.689685 25 28.3279)" stroke="black" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g id="burger">
+<g id="low">
+<line id="low-big" x1="91.5" y1="84.5" x2="51.5" y2="84.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<line id="low-small" x1="42.5" y1="84.5" x2="27.5" y2="84.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g id="mid">
+<line id="mid_2" x1="92.5" y1="62.5" x2="27.5" y2="62.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g id="top">
+<line id="top-big" x1="67.5" y1="39.5" x2="27.5" y2="39.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<line id="top-small" x1="91.5" y1="39.5" x2="76.5" y2="39.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</svg>

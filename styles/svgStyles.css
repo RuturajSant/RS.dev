@@ -1,0 +1,62 @@
+.hexagons path {
+  stroke: var(--primary);
+}
+#right-hex,
+#left-hex {
+  width: clamp(200px, 40vw, 500px);
+  height: clamp(200px, 40vw, 500px);
+}
+#background-left {
+  position: fixed;
+  z-index: -1;
+  left: -10%;
+  bottom: -25%;
+  width: clamp(200px, 40vw, 500px);
+  aspect-ratio: 1;
+  transform: rotate(60deg);
+  animation: rotateHex infinite 60s linear;
+}
+#background-right {
+  position: fixed;
+  z-index: -1;
+
+  right: -10%;
+  top: -10%;
+  width: clamp(200px, 40vw, 500px);
+  aspect-ratio: 1;
+  animation: rotateHex infinite 60s linear;
+}
+@keyframes rotateHex {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#toggle ~ .navbar-toggle svg #hamburger-menu #burger * {
+  stroke: var(--light-200);
+  transition: stroke 0.01s ease-in-out, transform 0.1s ease-in-out 0.1s;
+}
+#toggle:checked ~ .navbar-toggle svg #hamburger-menu #burger #low {
+  transform: translateY(-22px);
+}
+#toggle:checked ~ .navbar-toggle svg #hamburger-menu #burger #top {
+  transform: translateY(22px);
+}
+#toggle:checked ~ .navbar-toggle svg #hamburger-menu #burger * {
+  stroke: transparent;
+  transition: transform 0.1s ease-in-out, stroke 0.01s ease-in-out 0.1s;
+}
+#toggle ~ .navbar-toggle svg #hamburger-menu #close {
+  stroke: transparent;
+  transform-origin: center;
+  transform: rotate(135deg);
+  transition: stroke 0.01s ease-in-out 0.1s, transform 0.1s ease-in-out;
+}
+#toggle:checked ~ .navbar-toggle svg #hamburger-menu #close {
+  stroke: var(--light-200);
+  transform: rotate(0deg);
+  transition: stroke 0.01s ease-in-out, transform 0.2s ease-in-out 0.1s;
+}
