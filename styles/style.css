@@ -36,7 +36,7 @@
   top: -800%;
   left: 0%;
   position: absolute;
-  z-index: 200;
+  z-index: 100;
   width: 100%;
   padding: 7.5rem 2rem 1.5rem;
   align-items: center;
@@ -294,6 +294,39 @@
 #contact .contact-content .button {
   margin-top: 2rem;
 }
+#contact .container .contact-links {
+  position: relative;
+  top: -2.5rem;
+  width: 100%;
+  column-gap: 13rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+#contact .container .contact-links ul {
+  position: absolute;
+  top: 0;
+  gap: 1.2rem;
+}
+#contact .container .contact-links ul:first-of-type {
+  left: 0;
+}
+#contact .container .contact-links ul:last-of-type {
+  right: 0;
+}
+#contact .container .contact-links ul li a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#contact .container .contact-links ul li {
+  transform: translateY(0px);
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+}
+#contact .container .contact-links ul li:hover {
+  transform: translateY(-5px);
+  filter: grayscale(0%);
+}
+
 #footer {
   padding: 2rem 0 2rem 0rem;
   margin-top: 2rem;
@@ -542,6 +575,9 @@
   }
   #contact {
     padding-top: 4rem;
+  }
+  #contact .container .contact-links {
+    display: none;
   }
 }
 

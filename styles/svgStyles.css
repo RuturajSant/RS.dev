@@ -14,7 +14,7 @@
   width: clamp(200px, 40vw, 500px);
   aspect-ratio: 1;
   transform: rotate(60deg);
-  animation: rotateHex infinite 60s linear;
+  animation: rotateHex infinite 40s linear;
 }
 #background-right {
   position: fixed;
@@ -24,7 +24,7 @@
   top: -10%;
   width: clamp(200px, 40vw, 500px);
   aspect-ratio: 1;
-  animation: rotateHex infinite 60s linear;
+  animation: rotateHex infinite 40s linear;
 }
 @keyframes rotateHex {
   from {
