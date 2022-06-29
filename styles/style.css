@@ -223,6 +223,16 @@
   max-width: 300px;
   background: var(--card-hover);
 }
+.card .img-con::before {
+  position: absolute;
+  border-radius: 10px;
+  content: "";
+  background-color: var(--card-hover);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .img-con {
   overflow: hidden;
   position: absolute;
@@ -252,7 +262,7 @@
 }
 .card .card-content p:last-of-type {
   font-family: var(--ff-2);
-  color: var(--light-600);
+  color: var(--primary);
 }
 .card .icons {
   left: 1.5rem;
