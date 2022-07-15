@@ -3,9 +3,12 @@ const checkbox = document.getElementById("toggle");
 const links = document.querySelectorAll(".navbar-nav li a");
 const homeLink = document.querySelector(".navbar-brand");
 const loader = document.querySelector(".loader");
+const html = document.querySelector("html");
 
+html.style.overflow = "hidden";
 window.addEventListener("load", () => {
     loader.classList.add("remove-loader");
+    html.style.overflow = "auto";
 });
 
 
