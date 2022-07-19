@@ -24,9 +24,9 @@ html {
 
   --fs-text: 1.25rem; /*20px*/
   --fs-subtitle: 1.625rem; /*26px*/
-  --fs-title: 5rem; /*80px*/
-  --fs-cardtitle: 2.5rem; /*40px*/
-  --fs-heading: 3.125rem; /*50px*/
+  --fs-title: 4rem; /*80px*/
+  --fs-cardtitle: 2.125rem; /*40px*/
+  --fs-heading: 2.5rem; /*50px*/
 
   --fw-regular: 400;
   --fw-semibold: 500;
