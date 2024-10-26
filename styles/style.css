@@ -446,6 +446,57 @@
   color: var(--primary);
 }
 
+#experience{
+  font-family: var(--ff-1);
+  font-size: clamp(1rem, 4vw, var(--fs-text));
+  font-weight: var(--fw-semibold);
+  color: var(--light-200);
+}
+#experience  .title {
+  color: var(--light-200);
+  font-size: clamp(calc(var(--fs-heading) / 2), 6vw, var(--fs-heading));
+  font-family: var(--ff-1);
+  font-weight: var(--fw-regular);
+  margin-bottom: 2rem;
+}
+.exp-year{
+  width: 5rem;
+}
+.exp-item{
+  margin-bottom: 1rem;
+  position: relative;
+}
+.exp-item::before{
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  width: 1px;
+  height: 70%;
+  bottom: 0;
+  left: 2%;
+}
+.exp-title{
+  color: var(--primary);
+}
+.exp-description{
+  padding-top: 0.5rem;
+  color: var(--light-600);
+}
+.exp-skills{
+  padding-top: 0.5rem;
+}
+.exp-item > .flex{
+  flex-direction: column;
+}
+.exp-item::before{
+  display: none;
+} 
+.badge-container{
+  width: 40%;
+  aspect-ratio: 1;
+  display: block;
+}
+
 /* Tablet Styles */
 @media screen and (min-width: 500px) {
   .navbar-nav {
@@ -510,6 +561,15 @@
     top: 50%;
     opacity: 1;
   }
+  .exp-item > .flex{
+    flex-direction: row;
+  }
+  .exp-item::before{
+    display: block;
+  } 
+  .badge-container{
+    width: 30%;
+  }  
 }
 
 /* Desktop STYLES */
@@ -731,6 +791,15 @@
   #contact .container .contact-links {
     display: none;
   }
+  .exp-item > .flex{
+    flex-direction: row;
+  }
+  .exp-item::before{
+    display: block;
+  } 
+  .badge-container{
+    width: 15%;
+  }  
 }
 
 @media screen and (min-width: 1441px) {
